@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Final Push</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+  <style></style>
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"> Final Push Nav Bar </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Data Sources</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Franchis Location Visualizations</a>
+              <a class="dropdown-item" href="#">Full Screen Map</a>
+            </div>
+          </li>
+          </li>
+        </ul>
+  
+      </div>
+</nav>
+
+<body>
+  <!-- The div where we will inject our map/ put this in a shell -->
+  <h1 style="text-align: center;">Welcome to our Final Project</h1>
+<hr />
+
+<div class="container">
+  <div class="row">
+<table class="table table-bordered table-striped text-center">
+<tbody>
+<tr>
+<td style="width: 40%;text-align: center;">
+  <h2>What Questions Did We Plan on Answering?</h2>
+
+  </td>
+<td style="width: 40%;text-align: center;">
+  <h2>And How Would We Do It? </h2></td>
+</tr>
+<tr>
+  <td style="width: 50%;"><b>1. With fast food franchises on every corner, how can a prospective franchise owner determine the best location to open a new storefront?</b></td>
+  <td style="width: 50%;">Insert how we do it<br></td>
+</tr>       
+<tr>
+  <td style="width: 40%;"><b>2. Is it possible to determine potential location success through trends on twitter?</b></td>
+  <td style="width: 50%;">Scrape through available twitter message data to see user sentiment - positive and negative - towards one franchise or another.<br></td>
+</tr>   
+<tr>
+  <td style="width: 50%;"><b>3. Are there other factors that could contribute to sentiment for a particular franchise, or for determining the most ideal location to build?</b></td>
+  <td style="width: 50%;">Insert how we answer<br></td>
+</tr>   
+</tbody>
+</table>
+</div>
+
+<!-- <div class="container">
+  <div class='row'>
+    <!-- First of two columns -->
+    <!-- <div class="col-md-6"> -->
+      <!-- <h2>The Relationship between Price and Rating</h2> -->
+      <!-- <a>Placeholder for Graph</a> -->
+    <!-- </div> -->
+    <!-- Second of two columns -->
+    <!-- <div class="col-md-6"> -->
+
+      <!-- <img  display="block" margin-left= "auto" margin-right= "auto" width="150px" id="Yelp Logo" src="https://www.prodigymovingandstorage.com/wp-content/uploads/2018/11/yelp-logo-3.png" alt="Yelp Logo">  -->
+    <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+
+<!-- </div> --> -->
+<!-- <hr> -->
+
+<!-- <div      width= "50%" id="map"height="500px"></div> -->
+
+<!-- <hr> -->
+<!-- </div> -->
+
+
+
+
+
+  <!-- The div that holds our map -->
+  <!-- <div id="mapid"></div> -->
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- API key -->
+  <script type="text/javascript" src="static/js/config.js"></script>
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="static/js/logic.js"></script>
+</body>
+
+</html>
