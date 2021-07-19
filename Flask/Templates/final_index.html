@@ -86,13 +86,34 @@
 </tbody>
 </table>
 </div>
-<div class="container">
-<h3>{{random_neg_tweet.content}}
-</h3>
-<h3>{{random_pos_tweet.content}}
-  
-</h3>
+<!--<div class="container">
+<h5>{{random_neg_tweet.content}}
+</h5>
+<h5>{{random_pos_tweet.content}}
+
+</h5>
+</div> -->
+<hr width="90%" size="20" color="gray">
+
+<div class="row">
+  <div class="col-md-8">
+    <h3 style="text-align: center;">What is Twitter Sentiment?</h3>
+    <p>Natural language processing (NLP) is a process that allows a machine learning program to break
+      down tweets into smaller chunks that are more easily understood by the computer. Once all the segments are analyzed
+      the text of each tweet is given a overall score of polarity ranging from -1 to 1. The examples below show how the system
+      almost always successfuly sorts tweets based on the sentiment of the text.
+    </p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="25" aria-valuemax="100"></div>
+      <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="25" aria-valuemax="100"></div>
+      <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="25" aria-valuemax="100"></div>
+      <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="25" aria-valuemax="100"></div>
+    </div>
+  </div>
 </div>
+
+
+
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"

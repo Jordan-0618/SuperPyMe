@@ -18,7 +18,7 @@ def home():
     ##connect to mongodb to get sample 
     pos_output = []
     for t in mongo.db.tweets.find({"sentiment":"1.0"}):
-        pos_output.append({'content':t['content']})
+        pos_output.append({'content':t['content'], 'city':t['city']})
     list_len1 = len(pos_output)
     pos_pick_num = random.randint(0,list_len1)
     random_pos_tweet = pos_output[pos_pick_num]
