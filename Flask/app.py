@@ -15,13 +15,7 @@ mongo = PyMongo(app)
 @app.route('/')
 def home():
     
-    return render_template('final_index.html')
-
-
-@app.route('/scrape')
-def scrape():
-
-    ##connect to mongodb to get 
+    ##connect to mongodb to get sample 
     pos_output = []
     for t in mongo.db.tweets.find({"sentiment":"1.0"}):
         pos_output.append({'content':t['content']})
@@ -43,7 +37,15 @@ def scrape():
     neutral_pick_num = random.randint(0,list_len3)
     random_neutral_tweet = neutral_output[neutral_pick_num]
 
-    return jsonify({'result':random_neutral_tweet})
+    return render_template('final_index.html', random_neg_tweet=random_neg_tweet, random_pos_tweet=random_pos_tweet)
+
+
+@app.route('/scrape')
+def scrape():
+
+   
+
+    return 
 
 
 
