@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-  <!-- Leaflet CSS -->
+  <!-- Leaflet CSS
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin="" />
+    crossorigin="" /> -->
 
   <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="static/css/style.css"> --> -->
 
   <style></style>
 
@@ -42,7 +42,7 @@
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Franchis Location Visualizations</a>
+              <a class="dropdown-item" href="#">Franchise Location Visualizations</a>
               <a class="dropdown-item" href="#">Full Screen Map</a>
             </div>
           </li>
@@ -71,15 +71,15 @@
 </tr>
 <tr>
   <td style="width: 50%;"><b>1. With fast food franchises on every corner, how can a prospective franchise owner determine the best location to open a new storefront?</b></td>
-  <td style="width: 50%;">Insert how we do it<br></td>
+  <td style="width: 50%;">By scraping Twitter's available data, we singled out tweets with references to McDonald's, Starbucks, and Subway, three popular fast food franchises.  Once the tweets had been scraped, we determined the general sentiment of each tweet, thereby finding the average sentiment held for each restaurant at any given time. <br></td>
 </tr>       
 <tr>
   <td style="width: 40%;"><b>2. Is it possible to determine potential location success through trends on twitter?</b></td>
-  <td style="width: 50%;">Scrape through available twitter message data to see user sentiment - positive and negative - towards one franchise or another.<br></td>
+  <td style="width: 50%;">Given the available data, it is challenging to say with 100 percent certainty where a location should be opened.  Also, seeing as each city is quite large, given more time and access to more data we could narrow it down to specific zip codes for a more accurate reading.  That being said, we can see how sentiment changes throughout the years, which can be helpful in determining a timeline, and we can also observe overall density of restaurants along with sentiment, which can help in determining areas in need of a new storefront.<br></td>
 </tr>   
 <tr>
   <td style="width: 50%;"><b>3. Are there other factors that could contribute to sentiment for a particular franchise, or for determining the most ideal location to build?</b></td>
-  <td style="width: 50%;">Insert how we answer<br></td>
+  <td style="width: 50%;">Absolutely.  As previously stated, our lens when observing twitter trends was on a city scale.  When the data is narrowed to zip codes, there could be other factors such as location density or ease of access that can make all the difference.  Demographics will certainly have an additional effect on determining where to open a location.  Even politics could theoretically have a visible effect on the data, and given more time and resources could be factored in.<br></td>
 </tr>   
 </tbody>
 </table>
@@ -121,10 +121,10 @@
     crossorigin=""></script>
   <!-- D3 JavaScript -->
   <script src="https://d3js.org/d3.v5.min.js"></script>
-  <!-- API key -->
-  <script type="text/javascript" src="static/js/config.js"></script>
+  <!-- API key
+  <script type="text/javascript" src="static/js/config.js"></script> -->
   <!-- Our JavaScript -->
-  <script type="text/javascript" src="static/js/logic.js"></script>
+  <script type="text/javascript" src="logic.js"></script>
 </body>
 
 </html>
