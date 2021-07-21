@@ -53,7 +53,9 @@ def scrape():
 
     return redirect('/', code=302)
 
-
+@app.route('/datasources')
+def datasources():
+    return (render_template('Datasources.html'))
 
 if __name__ == "__main__":
     app.run(debug=True)
