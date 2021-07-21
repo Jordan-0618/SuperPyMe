@@ -31,7 +31,7 @@ def home():
     random_neg_tweet = neg_output[neg_pick_num]
 
 
-    return render_template('final_index.html', random_neg_tweet=random_neg_tweet, random_pos_tweet=random_pos_tweet)
+    return render_template('final_index-with-tableau.html', random_neg_tweet=random_neg_tweet, random_pos_tweet=random_pos_tweet)
 
 
 @app.route('/scrape')
