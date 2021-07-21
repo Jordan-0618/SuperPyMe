@@ -57,5 +57,13 @@ def scrape():
 def datasources():
     return (render_template('Datasources.html'))
 
+@app.route('/ca_map')
+def map():
+    return (render_template('CaMap.html'))
+
+@app.route('/finalconclusions')
+def conclusion():
+    return(render_template('final_conclusions.html'))
+
 if __name__ == "__main__":
     app.run(debug=True)
