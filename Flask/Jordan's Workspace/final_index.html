@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SuperPyMe Home</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+  <style></style>
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"> SuperPyMe Nav </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="final_index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Datasources.html">Data Sources</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Data Visualizations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Franchise Location</a>
+              <a class="dropdown-item" href="#">Opinions over Time</a>
+              <a class="dropdown-item" href="#">Other</a>
+            </div>
+          </li>
+          </li>
+        </ul>
+  
+      </div>
+</nav>
+
+<body style="background-color: white;">
+  <!-- The div where we will inject our map/ put this in a shell -->
+  
+  <h1 style="text-align: center; color: #1DA1F2;">
+    SuperPyMe!
+  </h1>
+  <h3 style="text-align: center; color: #1DA1F2;">
+    Welcome to Our Final Project
+  </h3>
+
+<hr />
+
+<div class="container">
+  <div class="row">
+<table class="table table-bordered table-striped text-center">
+<tbody>
+<tr>
+<td style="width: 40%;text-align: center; color: #1DA1F2;">
+  <h2>What Questions Did We Plan on Answering?</h2>
+
+  </td>
+<td style="width: 40%;text-align: center; color: #1DA1F2;">
+  <h2>And How Would We Do It? </h2></td>
+</tr>
+<tr>
+  <td style="width: 50%;"><b>1. With fast food franchises on every corner, how can a prospective franchise owner determine the best location to open a new storefront?</b></td>
+  <td style="width: 50%;">By analyzing twitter sentiment based on location, we can determine which cities have the most positive and negative feelings towards specific fast food chains<br></td>
+</tr>       
+<tr>
+  <td style="width: 40%;"><b>2. Is it possible to determine potential location success through trends on twitter?</b></td>
+  <td style="width: 50%;">Scrape through thousands of tweets from available twitter data and analyze which cities have the most positive overall feelings towards certain fast food chains<br></td>
+</tr>   
+<tr>
+  <td style="width: 50%;"><b>3. Are there other factors that could contribute to sentiment for a particular franchise, or for determining the most ideal location to build?</b></td>
+  <td style="width: 50%;">Determine if other factors such as time of year, per capita income, or other demographics can affect public opinion on fast food chains <br></td>
+</tr>   
+</tbody>
+</table>
+</div>
+
+<hr width="100%" size="20"style="border-top: 1px dashed gray;">
+
+<div class="row">
+  <div class="col-md-8" style="border-right: 1px dashed gray;">
+    <h3 style="text-align: center;color: #1DA1F2;">
+      Identifying the Problem</h3>
+    <p>
+      There is a fast food restaurant on almost every block you see, however, nearly half of all franchises will be closed only 5 years after they are opened. What leads some stores to succeed and others to fail? Is there as way to look at this problem in a different way than it has been studied previously? 
+    </p>
+    
+    <p>
+      Corporations spend about $800 Million a year on focus group research, but what if access to public opinion is already readily available to be analyzed? We will use the sentiment of twitter users to find the cities that are most positive towards specific fast food chains hoping they would be more receptive to new branches opening up. 
+    </p>
+    <p>
+      Specifically we looked at McDonalds, Subway, and Starbucks, as they are the three most populus chains in the US. We also kept the scope of our scraping specifically to cities within California with a population of over 75,000.
+    </p>
+  </div>
+  <div class="col-md-4">
+    <div class="row">
+      <img src="https://content.fortune.com/wp-content/uploads/2015/04/1280-mcdonalds.jpg" alt="pie chart" height="200px" width="240px" style="margin-left: 10px;">
+    </div>
+    <div class="row">
+      <img src="https://thumbs.dreamstime.com/z/man-holding-burger-mobile-phone-white-screen-copy-space-144215802.jpg" alt="pie chart" height="200px" width="240px" style="margin-left: 10px;">
+    </div>
+  </div>
+</div>
+  
+</div>
+
+
+<div class="container">
+<div class='row'>
+<div class="col-md-12">
+  <hr width="100%" size="20"style="border-top: 1px dashed gray;">
+  <h3 style="text-align: center; color: #1DA1F2;">What is Twitter Sentiment?</h3>
+  <p>Natural language processing (NLP) is a process that allows a machine learning program to break
+    down tweets into smaller chunks that are more easily understood by the computer. Once all the segments are analyzed
+    the text of each tweet is given a overall score of polarity ranging from -1 to 1. The examples below show how the system
+    almost always successfuly sorts tweets based on the sentiment of the text.
+  </p>
+<hr width="100%" size="20"style="border-top: 1px dashed gray;">
+
+  <h3 style="text-align: center; color:#1DA1F2;"> Real Examples from Our Dataset </h3>
+  <div class="row" >
+    <div class="col-md-3">
+      <h4 style="text-align: left;">-1</h4>
+    </div>
+    <div class="col-md-6">
+      <h4 style="text-align: center;">0</h4>
+    </div>
+    <div class="col-md-3">
+      <h4 style="text-align: right;">1</h4>
+    </div>
+  </div>
+
+  
+  
+
+
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="25" aria-valuemax="100"></div>
+    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="25" aria-valuemax="100"></div>
+    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="25" aria-valuemax="100"></div>
+    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="25" aria-valuemax="100"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <h4 style="text-align: left;">|</h4>
+    </div>
+    <div class="col-md-6">
+      <h4 style="text-align: center;">|</h4>
+    </div>
+    <div class="col-md-3">
+      <h4 style="text-align: right;">|</h4>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-4">
+      <div style="background-color:white; 
+                  width:300px;
+                  border: solid 15px #1DA1F2;
+                  padding: 20px;
+                  margin: px;">
+      <p>{{random_neg_tweet.content}}</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="https://www.clipartmax.com/png/small/1-10105_location-clipart-location-pin-white-clip-art-at-clker-location-clipart.png" width="20px" height="30px">  
+          </div>
+            <div class="col-md-3">
+            <p>{{random_neg_tweet.city}}</p>
+            </div>
+          </div>
+          <h5 style="text-align: left;">Sentiment = -1</h5>
+        </div>  
+      </div>
+    </div>
+    <div class="col-md-4" \>
+      <p style="text-align: center;
+                margin-top: 50px;">
+        <a class='btn btn-primary btn-lg' href="/scrape"  role="button">New Tweets
+        </a>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <div style="background-color:white; 
+                  width:300px;
+                  border: solid 15px #1DA1F2;
+                  padding: 20px;
+                  margin: px;
+                  margin-left: auto;
+                  margin-right: 35px">
+      <p>{{random_pos_tweet.content}}</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="https://www.clipartmax.com/png/small/1-10105_location-clipart-location-pin-white-clip-art-at-clker-location-clipart.png" width="20px" height="30px">  
+          </div>
+            <div class="col-md-9">
+            <p>{{random_pos_tweet.city}}</p>
+            </div>
+          </div>
+          <h5 style="text-align: left;">Sentiment = 1</h5>
+        </div>  
+      </div>
+    </div>
+  
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class='tableauPlaceholder' id='viz1626832995553' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tw&#47;Tweets_twbx&#47;AverageSentimentbyChain&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Tweets_twbx&#47;AverageSentimentbyChain' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tw&#47;Tweets_twbx&#47;AverageSentimentbyChain&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1626832995553');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='957px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='933px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='957px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='933px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.minWidth='957px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='1150px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+</div>
+
+</body>
+
+</html>

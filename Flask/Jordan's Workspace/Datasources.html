@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SuperPyMe Home</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+  <style></style>
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"> SuperPyMe Nav </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Data Sources</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Data Visualizations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Franchise Location</a>
+              <a class="dropdown-item" href="#">Opinions over Time</a>
+              <a class="dropdown-item" href="#">Other</a>
+            </div>
+          </li>
+          </li>
+        </ul>
+  
+      </div>
+</nav>
+
+<body style="background-color: white;">
+  <!-- The div where we will inject our map/ put this in a shell -->
+  
+  <h1 style="text-align: center; color: #1DA1F2;">
+    SuperPyMe!
+  </h1>
+  <h3 style="text-align: center; color: #1DA1F2;">
+    Welcome to Our Data Sources
+  </h3>
+<hr />
+
+<hr width="100%" size="20"style="border-top: 1px dashed gray;">
+
+<div class="row">
+  <div class="col-md-8" style="border-right: 1px dashed gray;">
+    <h3 style="text-align: center;color: #1DA1F2;">
+      Establishing our Data Sources</h3>
+    <p>
+      Much of the data utilized was made available through the free Twitter API.  Through this we were able to train a machine learning algorithm to distinguish between positive and negative tweets. 
+    </p>
+    
+    <p>
+      Additionally restaurant location as well as population data was utilized to assist with identifying trends and areas that may benefit from additional restaurant locations.
+    </p>
+    <p>
+      As there are hundreds of restaurants and locations, we pecifically looked at McDonalds, Subway, and Starbucks, as they are the three most populus chains within the US. We also kept the scope of our scraping specifically to cities within California with a population of over 75,000.
+    </p>
+  </div>
+  <div class="col-md-4">
+    <div class="row">
+      <img src="https://assets3.thrillist.com/v1/image/831584/1584x1056/crop;jpeg_quality=60;progressive.jpg" alt="pie chart" height="200px" width="240px" style="margin-left: 10px;">
+    </div>
+    <div class="row">
+      <img src="https://pbs.twimg.com/profile_images/1354479643882004483/Btnfm47p_400x400.jpg" alt="pie chart" height="200px" width="240px" style="margin-left: 10px;">
+    </div>
+  </div>
+</div>
