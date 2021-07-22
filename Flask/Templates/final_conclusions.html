@@ -14,7 +14,10 @@
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
 
-  <style></style>
+  <style> strong{
+    color: #1DA1F2;
+    text-decoration: underline;
+  }</style>
 
 </head>
 
@@ -41,6 +44,7 @@
             <a class="dropdown-item" href="/change_in_sentiment">Change in Sentiment Over Time</a>
             <a class="dropdown-item" href="/avg_city_sentiment">Average Sentiment per City</a>
             <a class="dropdown-item" href="/tableau_vis">Interactive Tableau Visualizations</a>
+            <a class="dropdown-item" href="/best_chain_by_city">Highest Sentiment Chain by City</a>
           </div>
         </li>
         <li class="nav-item">
@@ -61,29 +65,63 @@
 Final Conclusions  </h3>
 <hr />
 
-<hr width="100%" size="20"style="border-top: 1px dashed gray;">
+<hr width="100%" size="20"style="border-top: 4px double rgba(108, 192, 244, 0.591);">
 <div class="container">
   <div class="row">
-    <div class="col-md-8" style="border-right: 1px dashed gray;">
-      <h3 style="text-align: center;color: #1DA1F2;">
-        Our Final Thoughts</h3>
-      <h5>So now what?</h5>
+    <div class="col-md-8" style="border-right: 4px double rgba(108, 192, 244, 0.591);border-bottom: 4px double rgba(108, 192, 244, 0.591);">
+      <h3>We’ve <strong>scraped</strong> the tweets, we’ve <strong>studied</strong> the sentiment, we’ve <strong>analyzed</strong> the data, <strong> now what?</strong></h3>
+        <p></p>
+        <p><h4> What can we say about the evidence observed?  </h4> </p>
       
       <p>
-        Additionally restaurant location as well as population data was utilized to assist with identifying trends and areas that may benefit from additional restaurant locations.
-      </p>
-      <p>
-        As there are hundreds of restaurants and locations, we specifically looked at McDonalds, Subway, and Starbucks, as they are the three most populus chains within the US. We also kept the scope of our scraping specifically to cities within California with a population of over 75,000.
-      </p>
+        Judging purely off general positive sentiment, at the time of this study it is safe to say that overall, the average feelings towards McDonald’s, Subway, and Starbucks are positive in the state of California. When we narrow the focus, however, we can see some interesting things.         </p>
+
     </div>
     <div class="col-md-4">
-      <div class="row">
-        <img src="https://assets3.thrillist.com/v1/image/831584/1584x1056/crop;jpeg_quality=60;progressive.jpg" alt="pie chart" height="200px" width="240px" style="margin-left: 10px;">
-      </div>
-      <div class="row">
-        <img src="https://pbs.twimg.com/profile_images/1354479643882004483/Btnfm47p_400x400.jpg" alt="pie chart" height="200px" width="240px" style="margin-left: 10px;">
-      </div>
+    <div class="row" style="border-bottom: 4px double rgba(108, 192, 244, 0.591);">
+        <div style="background-color:white; 
+                  width:auto;
+                  border: solid 15px #1DA1F2;;
+                  border-radius: 8px;
+                  margin-left: 30px;
+                  margin-top: 0px;
+                  margin-bottom: 10px;">
+            <img src="https://thumbs.dreamstime.com/z/man-holding-burger-mobile-phone-white-screen-copy-space-144215802.jpg" alt="pie chart" height="180px" width="216px">
+        </div>
     </div>
+    </div>
+    <div class="container">
+        <div class="row" style='padding-left: 60px; padding-right: 60px;'>
+          <div class="col-md-12">      
+            <p style="padding-top: 30px;">
+            Let’s begin with Starbucks. Looking at the overall average city score, it is safe to say that opening a Starbucks, especially in densely populated areas, will yield a high chance of success. The highest rate of positive sentiment for Starbuck’s was observed in San Diego, Chula Vista, Corona, Hesperia, and Visalia, while the most negative feelings were held in the cities of Vallejo, Berkeley, Moreno Valley, Hayward, and Ventura*. Regardless of that fact, the sentiment score stayed well within and above 0.10 for most cities surveyed but simply judging off this evidence, opening a location within Southern California and along the coast is ideal.   </p>
+            </p>
+            <div class='tableauPlaceholder' id='viz1626979720448' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RW&#47;RWRD9QSWY&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;RWRD9QSWY' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RW&#47;RWRD9QSWY&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1626979720448');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+          
+            <p style="padding-top: 30px;">
+              McDonald’s also had generally positive scores throughout the state with some of the highest scores up in the Bay Area, specifically in San Jose, Fremont, Santa Clara, and a bit further east in Merced. Interestingly McDonald’s scored the worst in areas north and east of Los Angeles – Palmdale, Victorville, and Hesperia*. Whereas a location in Southern California seemed a better move for a Starbucks location, it looks like a successful venture would be opening a location in the Bay Area up north.   
+              </p>
+
+            <div class='tableauPlaceholder' id='viz1626981011980' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TS&#47;TSZHMT8QN&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;TSZHMT8QN' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TS&#47;TSZHMT8QN&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1626981011980');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+            <p style="padding-top: 30px;">
+              Unlike Starbucks or McDonald’s, Subway had a much less consistent sentiment score. Up and down the California coast the feelings towards Subway are very mixed. The most negative scores were in and around the Bay Area to the north – Berkeley, Daly City, Richmond, Redding – with some negative sentiment in the areas around Los Angeles, specifically Santa Clarita*. The most popular score, however, goes to San Bernardino, California*. In observing these results, the safest bet on where to open a venue would be in San Bernardino, and to perhaps shy away from Northern California.</p>   
+            
+          
+            <div class='tableauPlaceholder' id='viz1626981117519' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;69&#47;69Q7K5H4P&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;69Q7K5H4P' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;69&#47;69Q7K5H4P&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1626981117519');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            
+            <h3 style="margin-top: 30px;"><strong>Further Questions</strong></h3> 
+
+            <p>While observing the average sentiment score of a city and state proves useful when determining where to break ground, there were some things that could also have an effect. There was a noticeable trend of negative sentiment in Northern California towards two of the three restaurants we observed. Does this mean that Bay Area folks have a distaste for Sandwiches and Coffee, and a love of McDonald’s hamburgers? Hard to say.   </p>
+
+            <p>Interestingly, if we look at the timeline over the last year, we notice there is an overall dip in favorability around the beginning of Summer 2020 and the beginning of Autumn 2020 for each of the three franchises. Why is this? What events were occurring at the time that could explain such a dip in popularity? </p>
+
+            <p style="margin-bottom: 50px;">Given further time and resources, factoring in demographics, ease of access, current events, politics, etc., we would be able to develop a more comprehensive snapshot of the success of various restaurants. </p>
+        
+            <p>*results subject to change</p>
+          </div>
+    </div>
+  </div>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
