@@ -61,9 +61,25 @@ def datasources():
 def map():
     return (render_template('CaMap.html'))
 
-@app.route('/finalconclusions')
+@app.route('/final_conclusions')
 def conclusion():
     return(render_template('final_conclusions.html'))
+
+@app.route('/avg_city_sentiment')
+def avg_city_sentiment():
+    return(render_template('avg_city_sentiment.html'))    
+
+@app.route('/change_in_sentiment')
+def change_in_sentiment():
+    return(render_template('change_in_sentiment.html'))  
+
+@app.route('/franchise_location_sentiment')
+def franchise_location_sentiment():
+    return(render_template('franchise_location_sentiment.html')) 
+
+@app.route('/tableau_vis')
+def tableau_vis():
+    return(render_template('tableau_vis.html')) 
 
 if __name__ == "__main__":
     app.run(debug=True)
