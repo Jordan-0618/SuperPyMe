@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SuperPyMe Home</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+  <style></style>
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/"> SuperPyMe Nav </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/datasources">Data Sources</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Data Visualizations
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/franchise_location_sentiment">Franchise Location and Average Sentiment</a>
+            <a class="dropdown-item" href="/change_in_sentiment">Change in Sentiment Over Time</a>
+            <a class="dropdown-item" href="/avg_city_sentiment">Average Sentiment per City</a>
+            <a class="dropdown-item" href="/tableau_vis">Interactive Tableau Visualizations</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/final_conclusions">Final Conclusions</a>
+        </li>
+        </li>
+      </ul>
+
+    </div>
+</nav>
+
+<body style="background-color: white;">
+  
+  <h1 style="text-align: center; color: #1DA1F2;">
+    SuperPyMe!
+  </h1>
+  <h3 style="text-align: center; color: #1DA1F2;">
+    Change in Sentiment Over Time
+  </h3>
+
+  <div class="container">
+    <div class='row'>
+    <div class="col-md-12">
+      <hr width="100%" size="20"style="border-top: 1px dashed gray;">
+      <p>The three graphs below allow us to observe the average overall sentiment for each restaurant
+          in specific cities in California.   
+      </p>
+        <hr>
+        <h3 style="text-align: center; color: #1DA1F2;">Change Over Time for McDonald's</h3>
+        <br>
+        <img src="Images/Avg_Sentiment_City_McD.png" width="100%" alt="Avg Sentiment per City McDonalds">
+        <hr>
+        <h3 style="text-align: center; color: #1DA1F2;">Change Over Time for Subway</h3>
+        <br>
+        <img src="Images/Avg_Sentiment_City_SW.png" width="100%" alt="Avg Sentiment per City Subway">
+        <hr>
+        <h3 style="text-align: center; color: #1DA1F2;">Change Over Time for Starbucks</h3>
+        <br>
+        <img src="Images/Avg_Sentiment_City_SB.png" width="100%" alt="Avg Sentiment per City Starbucks">
